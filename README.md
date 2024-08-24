@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # my_coffee
 
 A Sample Flutter Project
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# MyCoffee
+A Sample Flutter Project
+>>>>>>> 388204820eb64c97df7a4e2387ed26f6c6d98225
