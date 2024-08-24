@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # my_coffee
 
 A Sample Flutter Project
