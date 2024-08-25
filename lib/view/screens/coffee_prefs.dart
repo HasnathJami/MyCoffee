@@ -49,6 +49,8 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
         Row(
           children: [
             const Text('Sugars: '),
+            if (sugars == 0)
+              const Text('No sugars...'),
             for (int i = 0; i < sugars; i++)
               Image.asset(
                 'assets/sugar_cube.png',
