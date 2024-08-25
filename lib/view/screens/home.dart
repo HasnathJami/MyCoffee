@@ -9,12 +9,8 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-            'Origin Coffee',
-             style: TextStyle(
-               fontWeight: FontWeight.bold,
-               color: Colors.white
-             ),
-
+          'Origin Coffee',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         backgroundColor: Colors.brown[700],
         centerTitle: true,
@@ -30,8 +26,14 @@ class Home extends StatelessWidget {
           Container(
             color: Colors.brown[100],
             padding: const EdgeInsets.all(20),
-            child:  CoffeePrefs(),
+            child: CoffeePrefs(),
           ),
+          Expanded(
+              child: Image.asset(
+            'assets/coffee_bg.jpg',
+            fit: BoxFit.fitWidth,
+            alignment: Alignment.bottomCenter,
+          )),
         ],
       ),
     );

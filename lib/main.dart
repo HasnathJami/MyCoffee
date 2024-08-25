@@ -51,37 +51,37 @@ void main() {
 //   }
 // }
 
-class Sandbox extends StatelessWidget {
-  const Sandbox({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Sandbox'),
-        backgroundColor: Colors.grey,
-      ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            width: 100,
-            color: Colors.green,
-            child: const Text("First One"),
-          ),
-          Container(
-            width: 200,
-            color: Colors.red,
-            child: const Text('Second One'),
-          ),
-          Container(
-            width: 300,
-            color: Colors.yellow,
-            child: const Text("Third One"),
-          ),
-        ],
-      ),
-    );
-  }
-}
+// class Sandbox extends StatelessWidget {
+//   const Sandbox({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Sandbox'),
+//         backgroundColor: Colors.grey,
+//       ),
+//       body: Column(
+//         crossAxisAlignment: CrossAxisAlignment.stretch,
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         children: [
+//           Container(
+//             width: 100,
+//             color: Colors.green,
+//             child: const Text("First One"),
+//           ),
+//           Container(
+//             width: 200,
+//             color: Colors.red,
+//             child: const Text('Second One'),
+//           ),
+//           Container(
+//             width: 300,
+//             color: Colors.yellow,
+//             child: const Text("Third One"),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
