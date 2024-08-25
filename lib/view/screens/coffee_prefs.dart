@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_coffee/view/shared/common_widgets/styled_button.dart';
+import '../shared/common_widgets/styled_text.dart';
 
 class CoffeePrefs extends StatefulWidget {
   const CoffeePrefs({super.key});
@@ -29,7 +31,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
       children: [
         Row(
           children: [
-            const Text('Strength: '),
+            const StyledText('Strength: '),
             for (int i = 0; i < strength; i++)
               Image.asset(
                 'assets/coffee_bean.png',
@@ -38,19 +40,13 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
                 colorBlendMode: BlendMode.multiply,
               ),
             const Expanded(child: SizedBox()),
-            FilledButton(
-                style: FilledButton.styleFrom(
-                    backgroundColor: Colors.brown,
-                    foregroundColor: Colors.white),
-                onPressed: increaseStrength,
-                child: const Text('+'))
+            StyledButton(onPressed: increaseStrength, child: const Text('+'))
           ],
         ),
         Row(
           children: [
-            const Text('Sugars: '),
-            if (sugars == 0)
-              const Text('No sugars...'),
+            const StyledText('Sugars: '),
+            if (sugars == 0) const StyledText('No sugars...'),
             for (int i = 0; i < sugars; i++)
               Image.asset(
                 'assets/sugar_cube.png',
@@ -59,12 +55,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
                 colorBlendMode: BlendMode.multiply,
               ),
             const Expanded(child: SizedBox()),
-            FilledButton(
-                style: FilledButton.styleFrom(
-                    backgroundColor: Colors.brown,
-                    foregroundColor: Colors.white),
-                onPressed: increaseSugars,
-                child: const Text('+'))
+            StyledButton(onPressed: increaseSugars, child: const Text('+'))
           ],
         ),
       ],
